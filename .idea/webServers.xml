@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="9480181c-44e6-45e2-a5b5-da81f435c14e" name="DiffSeg">
+        <fileTransfer rootFolder="/data/ypq/DiffusionPainter/DiffSeg" accessType="SFTP" host="10.171.21.21" port="22" sshConfigId="9c70ce21-7d5e-40a6-9520-2044bd0a3ac2" sshConfig="LAB2">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

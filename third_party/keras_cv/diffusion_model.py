@@ -249,7 +249,7 @@ class CrossAttention(keras.layers.Layer):
     v = tf.transpose(v, (0, 2, 1, 3))  # (bs, num_heads, time, head_size)
 
     score = td_dot(q, k) * self.scale
-    weights = keras.activations.softmax(score)  # (bs, num_heads, time, time)
+    weights = keras.activations.softmax(score)  # (bs, num_heads, time, time)  # for attention maps saving (self-attention)
     attn = td_dot(weights, v)
     attn = tf.transpose(attn, (0, 2, 1, 3))  # (bs, time, num_heads, head_size)
     out = tf.reshape(
